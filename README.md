@@ -1,4 +1,4 @@
-# generator-node-env [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# generator-node-env [![NPM version][npm-image]][npm-url]
 >  a Simple Generator to create a standardised node environment using newer ES standards.
 
 ## Installation
