@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "node .",
-    "test": "mocha --recursive",
-    "lint": "gulp lint",
+    "test": "mocha --compilers js:babel-core/register ./test/** --recursive --require babel-polyfill",
+    "test:watch": "mocha --compilers js:babel-core/register ./test/** --recursive --watch --require babel-polyfill",
     "cover": "gulp cover"
   },
   "keywords": [
-    "es6"
+    "es6",
+    "async"
   ],
   "author": "<%= projectAuthor %>",
   "repository": "<%= projectRepo %>",
@@ -25,6 +26,7 @@
     "babel-plugin-transform-object-assign": "^6.8.0",
     "babel-polyfill": "^6.9.1",
     "babel-preset-stage-0": "^6.5.0",
+    "chai": "^3.5.0",
     "eslint": "^3.1.1",
     "eslint-config-airbnb": "^9.0.1",
     "eslint-plugin-import": "^1.11.1",
